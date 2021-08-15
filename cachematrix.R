@@ -3,6 +3,8 @@
 
 ## Write a short comment describing this function
 
+# creates an object, contains inv, and four functions - will return a list at 
+# the end that contains the four functions, granting access to inv variable
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
         set <- function(y) {
@@ -18,6 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 
+# solves the inverse, but before it will determine if the inverse is NULL or not
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         inv <- x$getinverse()
